@@ -2,7 +2,7 @@ FROM phusion/baseimage:0.9.16
 
 MAINTAINER josh@kxes.net
 
-RUN apt-get update && apt-get install --yes --force-yes --no-install-recommends xorg && apt-get clean && rm -rf /var/lig/apt/lists/* /tmp/* /var/tmp/*
+RUN apt-get update && apt-get install --yes --force-yes --no-install-recommends xorg && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # install compiled debs for xrdp
 ADD x11rdp_0.9.0+master-1_amd64.deb /x11rdp.deb
